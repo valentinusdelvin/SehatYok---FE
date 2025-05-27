@@ -1,0 +1,464 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #1A3C34;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.site-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-right a {
+  color: white;
+  margin-left: 40px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h1 {
+  color: #1A3C34;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 20px 30px;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2C2C2C;
+  margin-left: 30px;
+}
+
+.illustration {
+  width: 45%;
+  text-align: center;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+/* Responsive mobile version */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text, .illustration {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .menu-section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 20px;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #114137;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* jarak antar card */
+  margin-top: 20px;
+}
+
+.counter-card {
+  background: #114137;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.counter-card label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.counter-value {
+  font-weight: bold;
+  font-size: 64px;
+  margin: 10px 0;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.counter-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0b0b18;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.height-card {
+  background-color: #1A3C34;
+  color: #F8F8F8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.height-card label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.height-value {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.height-card input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background: transparent;
+  outline: none;
+}
+
+/* track nya */
+.height-card input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #F8F8F8;
+  border-radius: 5px;
+  border: none;
+}
+
+/* thumb nya */
+.height-card input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #020D19;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7.5px; /* biar thumb pas di tengah track */
+  border: none;
+  box-shadow: none;
+}
+
+/* biar waktu focus gak ada biru2 */
+.height-card input[type=range]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.height-card input[type=range]::-webkit-slider-thumb:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.range-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.gender-card {
+  background: #114137;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.gender-card label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.gender-wrapper {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gender-label {
+  font-size: 22px;
+}
+
+.gender-toggle {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  background: #f0edff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.gender-toggle .toggle-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #0b0b18;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  transition: all 0.3s ease;
+}
+
+.calculate-btn {
+  background-color: #163c32;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calculate-btn:hover {
+  background-color: #0f2a23;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-card {
+  background: #114137;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  width: 250px;
+  padding-bottom: 0px;
+}
+
+.result-card #bmi-result {
+  font-size: 86px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.result-card #bmi-category {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.result-card #bmi-description {
+  font-size: 15px;
+  font-weight:lighter;
+  margin-top: 40px;
+}
+
+.underweight {
+  background-color: #4ea5d9; /* biru */
+}
+
+.normal {
+  background-color: #114137; /* ijo */
+}
+
+.overweight {
+  background-color: #ff7926; /* oren */
+}
+
+.obese {
+  background-color: #f63224; /* merah */
+}

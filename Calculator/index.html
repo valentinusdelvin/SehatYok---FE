@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="asset/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="calculator.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="asset/logo.svg" alt="SehatYok Logo" class="logo">
+      <span class="site-title">SehatYok</span>
+    </div>
+    <div class="nav-right">
+      <a href="../#education-section">Edukasi</a>
+      <a href="../#menu-section">Menu Sehat</a>
+      <a href="../#calculator-section">BMI Calculator</a>
+      <a href="../#consultation-section">Konsultasi</a>
+      <a href="../#forum-section">Forum</a>
+      <a href="#">Log in</a>
+    </div>
+  </div>
+
+    <section class="calculator">
+        <div class="container">
+            <h1>BMI CALCULATOR</h1>
+            <p class="desc">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+            berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.
+            </p>
+            
+            <div class="input-container">
+                <div class="counter-card">
+                    <label>Age</label>
+                    <div class="counter-value" id="age-value">30</div>
+                    <div class="counter-buttons">
+                        <button onclick="decrease('age-value')">-</button>
+                        <button onclick="increase('age-value')">+</button>
+                    </div>
+                </div>
+
+                <div class="counter-card">
+                    <label>Weight (KG)</label>
+                    <div class="counter-value" id="weight-value">78</div>
+                    <div class="counter-buttons">
+                        <button onclick="decrease('weight-value')">-</button>
+                        <button onclick="increase('weight-value')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="height-card">
+                <label>Height (CM)</label>
+                <div class="height-value" id="height-value">-</div>
+                <input type="range" min="50" max="300" value="175" id="height-slider">
+                <div class="range-label">
+                    <span>50 cm</span>
+                    <span>300 cm</span>
+                </div>
+            </div>
+
+            <div class="gender-card">
+                <label>Gender</label>
+                <div class="gender-wrapper">
+                    <span class="gender-label">Male</span>
+                    <div class="gender-toggle" id="gender-toggle">
+                    <div class="toggle-btn" id="toggle-btn"></div>
+                </div>
+                <span class="gender-label">Female</span>
+                </div>
+            </div>
+
+            <button class="calculate-btn" id="calculate-btn">Calculate BMI</button>
+        </div>
+    </section>
+</body>
+</html>
