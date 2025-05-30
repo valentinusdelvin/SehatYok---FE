@@ -5,10 +5,10 @@ const menuRightBtn = document.querySelector(".menu-section .slider-btn.right");
 document.querySelectorAll('.nav-right a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const targetID = this.getAttribute('href');
-    if (!targetID.startsWith('#')) return; // Pastikan hanya link dengan ID yang valid
+    if (!targetID.startsWith('#')) return;
     e.preventDefault();
     const targetSection = document.querySelector(targetID);
-    const offsetTop = targetSection.offsetTop - 70; // 70px buat offset navbar kalau fixed
+    const offsetTop = targetSection.offsetTop - 70;
 
     window.scrollTo({
       top: offsetTop,
@@ -22,7 +22,7 @@ document.querySelectorAll('.footer-menu a').forEach(anchor => {
     e.preventDefault();
     const targetID = this.getAttribute('href');
     const targetSection = document.querySelector(targetID);
-    const offsetTop = targetSection.offsetTop - 70; // 70px buat offset navbar kalau fixed
+    const offsetTop = targetSection.offsetTop - 70;
 
     window.scrollTo({
       top: offsetTop,
