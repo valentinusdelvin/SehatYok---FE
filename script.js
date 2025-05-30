@@ -4,6 +4,21 @@ const menuRightBtn = document.querySelector(".menu-section .slider-btn.right");
 
 document.querySelectorAll('.nav-right a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
+    const targetID = this.getAttribute('href');
+    if (!targetID.startsWith('#')) return; // Pastikan hanya link dengan ID yang valid
+    e.preventDefault();
+    const targetSection = document.querySelector(targetID);
+    const offsetTop = targetSection.offsetTop - 70; // 70px buat offset navbar kalau fixed
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
+
+document.querySelectorAll('.footer-menu a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
     e.preventDefault();
     const targetID = this.getAttribute('href');
     const targetSection = document.querySelector(targetID);
