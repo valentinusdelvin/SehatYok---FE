@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="asset/logo.svg" type="image/svg+xml">
+  <title>Log In</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="signup-box">
+      <h2 style="margin-bottom: 0px;">Welcome Back!</h2>
+      <h3>Enter your Credentials to access your account</h3>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Sign In</button>
+      </form>
+
+      <div id="error-message" class="error-message"></div>
+
+      <div class="divider">or</div>
+
+      <div class="social-login">
+        <button class="google-btn">
+          <img src="asset/google.svg" alt="Google Icon">
+          Sign in with Google
+        </button>
+        <button class="apple-btn">
+          <img src="asset/apple.svg" alt="Apple Icon">
+          Sign in with Apple
+        </button>
+      </div>
+
+      <p class="signin-text">Don't have an account? <a href="register.html">Sign Up</a></p>
+    </div>
+
+    <div class="image-box">
+      <img src="asset/auth-img.svg" alt="Food Image">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
