@@ -462,3 +462,100 @@ h1 {
 .obese {
   background-color: #f63224; /* merah */
 }
+
+footer {
+  background-color: #004d40;
+  color: white;
+  padding: 40px 30px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-logo .logo {
+  width: 30px;
+  height: auto;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
