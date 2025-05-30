@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const articleTitle = document.querySelector(".calculator h1");
+  if (articleTitle) {
+    document.title = articleTitle.textContent + " | SehatYok";
+  }
+});
+
+
 function increase(id) {
   let value = parseInt(document.getElementById(id).innerText);
   if (value<100) value++;
