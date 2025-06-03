@@ -1,17 +1,20 @@
+/* Base Styles */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #004d40;
+  background-color: #1a3c34;
   margin: 0;
   padding: 0;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #004d40;
+  background-color: #1a3c34;
   color: white;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-left {
@@ -29,9 +32,14 @@ body {
   font-weight: 600;
 }
 
+.nav-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .nav-right a {
   color: white;
-  margin-left: 40px;
   text-decoration: none;
   font-weight: 500;
 }
@@ -40,24 +48,25 @@ body {
   text-decoration: underline;
 }
 
+/* Hero Section */
 .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px 30px 100px;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 .text {
   width: 50%;
+  padding-right: 20px;
 }
 
 .text h1 {
   color: #fff;
   font-size: 48px;
   font-weight: 600;
-  margin: 0 0 20px 150px;
+  margin: 0 0 20px 0;
 }
 
 .illustration {
@@ -67,85 +76,49 @@ body {
 
 .illustration img {
   max-width: 100%;
+  height: auto;
 }
 
-/* Responsive mobile version */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text, .illustration {
-    width: 100%;
-  }
-
-  .text h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-}
-
-.doctor-section, 
+/* Doctor Sections */
+.doctor-section,
 .doctor-section-reversed {
   display: flex;
-  padding: 0px;
-}
-
-/* default layout */
-.doctor-section {
   flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-/* reversed layout */
-.doctor-section-reversed {
-  flex-direction: row;
-}
-
-/* Kolom gambar & teks */
-.doctor-image, 
+.doctor-image,
 .doctor-text {
   flex: 1;
-  padding: 0px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Responsif gambar */
 .doctor-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Style teks */
 .doctor-text h2 {
-  align-items: center;
-  justify-content: center;
   color: #f8f8f8;
   margin-bottom: 10px;
-  font-size: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-size: 36px;
+  text-align: center;
 }
 
 .doctor-text p {
-  width: 700px;
-  align-items: center;
-  justify-content: center;
   color: #f8f8f8;
-  margin-top: 40px;
-  margin-bottom:0px;
-  margin-right: 20px;
-  margin-left: 20px;
+  max-width: 700px;
+  margin: 40px auto 0;
+  text-align: center;
 }
 
-/* Style tombol */
 .chat-btn {
+  display: block;
   font-weight: bold;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  align-items: center;
-  justify-content: center;
+  margin: 20px auto 0;
   padding: 15px 30px;
   background: #f8f8f8;
   border: none;
@@ -158,17 +131,10 @@ body {
   background: #2980b9;
 }
 
-/* Responsive: susunan kolom jadi vertikal di layar sempit */
-@media (max-width: 768px) {
-  .doctor-section, 
-  .doctor-section-reversed {
-    flex-direction: column;
-  }
-}
-
+/* Footer */
 footer {
   border-top: #fff 1px solid;
-  background-color: #004d40;
+  background-color: #1a3c34;
   color: white;
   padding: 40px 30px 20px;
   font-family: "Poppins", sans-serif;
@@ -242,16 +208,66 @@ footer {
   font-size: 12px;
 }
 
-/* RESPONSIVE */
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .text h1 {
+    font-size: 40px;
+  }
+
+  .doctor-text h2 {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .nav-right {
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text, .illustration {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text h1 {
+    font-size: 36px;
+  }
+
+  .doctor-section,
+  .doctor-section-reversed {
+    flex-direction: column;
+  }
+
+  .doctor-text h2 {
+    font-size: 28px;
+  }
+
+  .doctor-text p {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .chat-btn {
+    margin-bottom: 20px;
+  }
+
   .footer-top {
     flex-direction: column;
     gap: 20px;
     text-align: center;
-  }
-
-  .footer-logo {
-    justify-content: center;
   }
 
   .footer-menu {
@@ -261,5 +277,24 @@ footer {
 
   .social-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .text h1 {
+    font-size: 28px;
+  }
+
+  .doctor-text h2 {
+    font-size: 24px;
+  }
+
+  .chat-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .footer .title {
+    font-size: 20px;
   }
 }
